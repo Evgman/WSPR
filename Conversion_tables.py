@@ -93,3 +93,4 @@ def converse_tab():
         df_after_replace_PG_Pwr_PP_NN_Pwr1_Pwr2_PP_NN.to_excel(writer, sheet_name='Original', index=False,
                                                                freeze_panes=(1, 1))
         df3_sort_time.to_excel(writer, sheet_name='Original', index=False, freeze_panes=(1, 1), startcol=13)
+    print('Файл выгружен')
