@@ -1,3 +1,5 @@
 .idea/
 chromedriver.exe
 old/
+result.xlsx
+__pycache__/
