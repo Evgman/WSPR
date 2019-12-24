@@ -1,6 +1,19 @@
 import numpy as np
+import pandas as pd
 
-Pwr1_replaceable = float(100)
-Pwr1_replace = np.around((10 * np.log10(Pwr1_replaceable * 1000)), decimals=1)
+import pandas as pd
+import numpy as np
 
-print(Pwr1_replace)
+df = pd.DataFrame({'Type': list('ABBC'), 'Set': list('ZZXY')})
+df['Type2'] = df['Type']
+B = ['B', 'BB']
+D = ['D', 'DD']
+df2 = df.replace({'Type': {}})
+# df.replace({'a' : { 'Medium' : 2, 'Small' : 1, 'High' : 3 }})
+
+# cols = df.columns.tolist()
+# cols = cols[-1:] + cols[:-1]
+# df = df[cols]
+# print(df)
+print(df2)
+# print(cols)
